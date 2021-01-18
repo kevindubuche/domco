@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
-// Route::get('about', function(){
-//     return view('about');
-// });
+})->name('home');
 
-Route::get('about', [App\Http\Controllers\AboutController::class, 'index']);
+Route::get('about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
+Route::get('service', [App\Http\Controllers\ServiceController::class, 'index'])->name('service');
