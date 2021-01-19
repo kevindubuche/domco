@@ -30,3 +30,4 @@
 15. [] Create a file _headerPartial.blabe.php and add the header code.
 16. [] Include the partial in the master
 >>>  @include('layouts/partials/_headerPartial')
+17. [] iInclude bootstrap CDN
